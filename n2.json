@@ -1,0 +1,1936 @@
+{
+ "displayFieldName": "TAG",
+ "fieldAliases": {
+  "FACILITYID": "รหัสอุปกรณ์"
+ },
+ "fields": [
+  {
+   "name": "FACILITYID",
+   "type": "esriFieldTypeString",
+   "alias": "รหัสอุปกรณ์",
+   "length": 14
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "FACILITYID": "PIA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SKA02VR-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PKT05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TA1-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAT01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BHA02VR-101"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPB05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BHA04VR-101"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "LKB-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSU05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SKA04VR-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLT01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBT02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLB04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MS-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BHAVB-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLB03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSU02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLT04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BHA01VR-101"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PSN05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PPH01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SSL04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SKA03VR-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PPH04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SKAVB-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SSL01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPB02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TSK02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA3BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PKT0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "LKABB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLT03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KP-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "LKA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC3BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "AKR01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BMN-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "ST-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PKT1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PSN1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "LKA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPB01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BHAVB-2232"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAB1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TSK01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBT03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "AKR02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAT02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PPH05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLT1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAB03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PC-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLT02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAABVB-02"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "HTA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRABVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PPH03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAB05VR-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAT03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBT1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSU04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SL-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PKT02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAABB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PC-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAB04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLT05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAT04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PR-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBT05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPB1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT0BVB-03"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TSK04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA12VR-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TSK05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLB01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT0BVB-02"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSU03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SSL05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PR-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PKT01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PL2-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SLB-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TA1-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSU01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UT-2232"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PSN04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "ST-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAT1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MS-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PPH02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAB01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BMN-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSU01BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KP-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NA-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAABVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAB06VR-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SSL1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SLB-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PKT03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBT01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PSN02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAT05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PKT04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAABVB-03"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBT04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TSK03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PL1-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SSL02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SZA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SKA01VR-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPB03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NA-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PL1-2212"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "LAA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UT-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLB02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPB04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PSN03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PSN01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KPA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "LKA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WGT07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "LKA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAB2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PPH0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TAA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PKT06VR-101"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA11VR-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA06VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLB05VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BHA03VR-101"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKUBVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SKAVB-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "LKA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SL-2222"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "MSA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SSL03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "DCA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA0BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "BNA03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "AKR03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLC03VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PUU10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PRA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "UTA07VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "NAB02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "WBA1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PIH04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA08VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA01VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TSK1BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "SWA2BVB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "STA04VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "RKA02VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "TPH09VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "KKU10VB-01"
+   }
+  },
+  {
+   "attributes": {
+    "FACILITYID": "PLA08VB-01"
+   }
+  }
+ ]
+}
