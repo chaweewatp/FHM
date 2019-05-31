@@ -263,19 +263,19 @@ print('#'*10,' '*58,'#'*10)
 sleep(0.5)
 print('#'*10,' '*58,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*6, ' '*2, '#'*2, ' '*2, '#'*2, ' '*2, '#'*1,' '*3, '#'*1,' '*22,'#'*10)
+print('#'*10,' '*13,'#'*6, ' '*2, '#'*2, ' '*2, '#'*2, ' '*2, '#'*1,' '*3, '#'*1,' '*14,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,' '*1, '#'*2, ' '*22,'#'*10)
+print('#'*10,' '*13,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,' '*1, '#'*2, ' '*14,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*6, ' '*2, '#'*8, ' '*2,               '#'*3, '#'*3, ' '*22,'#'*10)
+print('#'*10,' '*13,'#'*6, ' '*2, '#'*8, ' '*2,               '#'*3, '#'*3, ' '*14,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1,  '#'*2,' '*22,'#'*10)
+print('#'*10,' '*13,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1,  '#'*2,' '*14,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1, '#'*2,' '*22,'#'*10)
+print('#'*10,' '*13,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1, '#'*2,' '*14,'#'*10)
 sleep(0.5)
 print('#'*10,' '*58,'#'*10)
 sleep(0.5)
-print('#'*10,' '*44,'version 1.0.0','#'*10)
+print('#'*10,' '*44,'version 1.0.1','#'*10)
 sleep(0.5)
 print('#'*80)
 print('#'*80)
@@ -590,7 +590,7 @@ for area in [1,2,3]:
 
 
 
-    print('-------------FHM calculation of area {}-------------'.format(area))
+    # print('-------------FHM calculation of area {}-------------'.format(area))
     df_input_weight=pd.read_csv('weight_input.csv')
     del df_input_weight['Load Break']
     del df_input_weight['Recloser']
@@ -611,7 +611,7 @@ for area in [1,2,3]:
     elif area ==3:
         list_feeder_name=List_N3_feeder_name
 
-    for feeder in tqdm(list_feeder_name):
+    for feeder in tqdm(list_feeder_name, desc='FHM calculation area {}'.format(area)):
     #     print(feeder)
         num_equipment = len(dict_feeder[feeder]['CB'])+len(dict_feeder[feeder]['SCB'])+len(dict_feeder[feeder]['Recloser'])+len(dict_feeder[feeder]['Switch'])
         num_CB=len(dict_feeder[feeder]['CB'])
@@ -635,24 +635,16 @@ for area in [1,2,3]:
             net1.layers[1].np['b']=[0]
             df_nor_input_layer.iloc[np.where(df_nor_input_layer['feeder']==feeder)[0],1:]
             output=net1.sim(np.array(df_nor_input_layer.iloc[np.where(df_nor_input_layer['feeder']==feeder)[0],1:]).tolist())
-    #         print(output)
             dict_FHI.update({feeder:1-output[0][0]})
         else:
             dict_FHI.update({feeder:1})
-
-
     # print(dict_FHI)
     df_input_layer['FHI']=[dict_FHI[feeder] for feeder in df_input_layer['feeder'].tolist()]
 #     print(df_input_layer)
-
-    with open("FHM_{}.json".format(are),'w') as outfile:
+    with open("FHM_{}.json".format(area),'w') as outfile:
         json.dump(dict_FHI, outfile, cls=NumpyEncoder)
-
     print('-------------FHM area {} is saved-------------'.format(area))
-
-
 print('-------------add urban area -------------')
-
 
 #read all 3N json file
 list_FHI=[]

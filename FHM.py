@@ -256,6 +256,7 @@ class NumpyEncoder(json.JSONEncoder):
             return obj.tolist()
         return json.JSONEncoder.default(self, obj)
 
+
 print('')
 print('')
 print('#'*80)
@@ -265,19 +266,19 @@ print('#'*10,' '*58,'#'*10)
 sleep(0.5)
 print('#'*10,' '*58,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*6, ' '*2, '#'*2, ' '*2, '#'*2, ' '*2, '#'*1,' '*3, '#'*1,' '*22,'#'*10)
+print('#'*10,' '*13,'#'*6, ' '*2, '#'*2, ' '*2, '#'*2, ' '*2, '#'*1,' '*3, '#'*1,' '*14,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,' '*1, '#'*2, ' '*22,'#'*10)
+print('#'*10,' '*13,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,' '*1, '#'*2, ' '*14,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*6, ' '*2, '#'*8, ' '*2,               '#'*3, '#'*3, ' '*22,'#'*10)
+print('#'*10,' '*13,'#'*6, ' '*2, '#'*8, ' '*2,               '#'*3, '#'*3, ' '*14,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1,  '#'*2,' '*22,'#'*10)
+print('#'*10,' '*13,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1,  '#'*2,' '*14,'#'*10)
 sleep(0.5)
-print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1, '#'*2,' '*22,'#'*10)
+print('#'*10,' '*13,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1, '#'*2,' '*14,'#'*10)
 sleep(0.5)
 print('#'*10,' '*58,'#'*10)
 sleep(0.5)
-print('#'*10,' '*44,'version 1.0.0','#'*10)
+print('#'*10,' '*44,'version 1.0.1','#'*10)
 sleep(0.5)
 print('#'*80)
 print('#'*80)
@@ -286,10 +287,11 @@ print('')
 print('')
 
 region = 1 #N
-region = 1 #N
 day = datetime.now().day
 month = datetime.now().month
 year = datetime.now().year
+
+print('-------start FHM: day:{} month:{} year:{}'.format(day,month,year))
 
 number_Criteria=10
 dict_RI={1:0, 2:0, 3:0.58, 4:0.9, 5:1.12, 6:1.24, 7:1.32, 8:1.41, 9:1.46, 10:1.5}
@@ -473,7 +475,7 @@ for area in [1,2,3]:
         dict_feeder = json.load(read_file)
 
     #retieve APSA data
-    print('-------------retrieve APSA data of area {}-------------'.format(area))
+    # print('-------------retrieve APSA data of area {}-------------'.format(area))
     res2=requests.get("https://region1.pea.co.th/api/apsa/status/2019")
     res2=res2.json()
     list_feedername=[dict['feedername'] for dict in res2['records']]
@@ -523,7 +525,7 @@ for area in [1,2,3]:
     del df_equipment['Unnamed: 0']
 
 
-    print('-------------retrieve OMS data of area {}-------------'.format(area))
+    # print('-------------retrieve OMS data of area {}-------------'.format(area))
     if area == 1:
         list_feeder_name=List_N1_feeder_name
     elif area ==2:
@@ -558,7 +560,7 @@ for area in [1,2,3]:
     #         print(feeder , 'T/L:', num_TL, 'T/R:',num_TR)
         dict_counter.update({feeder:{'T/L':num_TL, 'T/R':num_TR}})
         pass
-    print('-------------retrieve max, average load data of area {}-------------'.format(area))
+    # print('-------------retrieve max, average load data of area {}-------------'.format(area))
     if area == 1:
         list_feeder_name=List_N1_feeder_name
     elif area ==2:
@@ -595,7 +597,7 @@ for area in [1,2,3]:
 
 
 
-    print('-------------FHM calculation of area {}-------------'.format(area))
+    # print('-------------FHM calculation of area {}-------------'.format(area))
     df_input_weight=pd.read_csv('weight_input.csv')
     del df_input_weight['Load Break']
     del df_input_weight['Recloser']
@@ -616,7 +618,7 @@ for area in [1,2,3]:
     elif area ==3:
         list_feeder_name=List_N3_feeder_name
 
-    for feeder in tqdm(list_feeder_name):
+    for feeder in tqdm(list_feeder_name, desc='FHM calculation area {}'.format(area)):
     #     print(feeder)
         num_equipment = len(dict_feeder[feeder]['CB'])+len(dict_feeder[feeder]['SCB'])+len(dict_feeder[feeder]['Recloser'])+len(dict_feeder[feeder]['Switch'])
         num_CB=len(dict_feeder[feeder]['CB'])
@@ -650,7 +652,7 @@ for area in [1,2,3]:
     df_input_layer['FHI']=[dict_FHI[feeder] for feeder in df_input_layer['feeder'].tolist()]
 #     print(df_input_layer)
 
-    with open("FHM_{}.json".format(are),'w') as outfile:
+    with open("FHM_{}.json".format(area),'w') as outfile:
         json.dump(dict_FHI, outfile, cls=NumpyEncoder)
 
     print('-------------FHM area {} is saved-------------'.format(area))
