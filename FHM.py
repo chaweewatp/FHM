@@ -678,7 +678,14 @@ for area in tqdm([1,2,3]):
 
 all_dict_FHM={'raw_data':[item2 for item1 in list_FHI for item2 in item1]}
 
+
 with open("FHM.json",'w') as outfile:
     json.dump(all_dict_FHM, outfile, cls=NumpyEncoder)
-
 print('-------------FHM.json file is saved -------------')
+
+with open("FHM_{}_{}_{}.json".format(day,month,year),'w') as outfile:
+    json.dump(all_dict_FHM, outfile, cls=NumpyEncoder)
+print('-------------FHM_{}_{}_{}.json file is saved -------------'.format(day,month,year))
+
+
+print('-------------Finish FHM-------------')
