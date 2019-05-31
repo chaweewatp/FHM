@@ -8,6 +8,8 @@ import neurolab as nl
 from tqdm import tqdm
 from time import sleep
 
+from datetime import datetime
+
 def decode(input):
     if input == 1:
         output = 9
@@ -37,7 +39,6 @@ def count_APSA(df, feeder):
     else:
         return {'percent_complete':1-(temp_df['complete']/temp_df['total'])}
 
-
 def count_counter(df, feeder):
     temp_df=df.drop(set(np.where(df['ฟีดเดอร์']!=feeder)[0])).copy()
     return {'T/R':list(temp_df['ประเภทการทำงาน']).count('T/R'), 'T/L':list(temp_df['ประเภทการทำงาน']).count('T/L')}
@@ -48,8 +49,6 @@ def nor_input_layer(df):
     df['Peak load']=[item/10   for item in df['Peak load']]
     df['Average load']=[item/10   for item in df['Average load']]
     return df
-
-
 
 def get_max_load_N1(area, feeder, year,month):
     if area == 1:
@@ -106,7 +105,6 @@ def get_max_load_N2(area, feeder, year,month):
             return float(response['max'])
         else:
             return float(0)
-
 
 def get_ava_load_N2(area, feeder, year,month):
     if area == 2:
@@ -256,11 +254,43 @@ class NumpyEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, obj)
 
 
-year = 2019
-month = 4
+print('')
+print('')
+print('#'*80)
+print('#'*80)
+sleep(0.5)
+print('#'*10,' '*58,'#'*10)
+sleep(0.5)
+print('#'*10,' '*58,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*6, ' '*2, '#'*2, ' '*2, '#'*2, ' '*2, '#'*1,' '*3, '#'*1,' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,' '*1, '#'*2, ' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*6, ' '*2, '#'*8, ' '*2,               '#'*3, '#'*3, ' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1,  '#'*2,' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1, '#'*2,' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*58,'#'*10)
+sleep(0.5)
+print('#'*10,' '*44,'version 1.0.0','#'*10)
+sleep(0.5)
+print('#'*80)
+print('#'*80)
+sleep(0.5)
+print('')
+print('')
+
+
+
 region = 1 #N
+day = datetime.now().day
+month = datetime.now().month
+year = datetime.now().year
 
-
+print('-------start FHM: day:{} month:{} year:{}'.format(day,month,year))
 number_Criteria=10
 dict_RI={1:0, 2:0, 3:0.58, 4:0.9, 5:1.12, 6:1.24, 7:1.32, 8:1.41, 9:1.46, 10:1.5}
 data=pd.read_csv('surveys.csv')
@@ -353,35 +383,25 @@ rex=re.compile(pattern)
 json1 = json.loads(open('n1.json').read())
 List_N1_feeder_name= [rex.findall(dict['attributes']['FACILITYID'][0:5]) for dict in json1['features']]
 List_N1_feeder_name=[a[0] for a in List_N1_feeder_name if a]
-
 set_A=set([x for x in List_N1_feeder_name if List_N1_feeder_name.count(x)>1])
-# print(set_A)
 List_N1_feeder_name=list(set(List_N1_feeder_name))
 set_A=set([x for x in List_N1_feeder_name if List_N1_feeder_name.count(x)>1])
-# print(set_A)
-
 List_N1_CB=[item + 'VB01' for item in List_N1_feeder_name]
 
 json2 = json.loads(open('n2.json').read())
 List_N2_feeder_name= [rex.findall(dict['attributes']['FACILITYID'][0:5]) for dict in json2['features']]
 List_N2_feeder_name=[a[0] for a in List_N2_feeder_name if a]
-
 set_A=set([x for x in List_N2_feeder_name if List_N2_feeder_name.count(x)>1])
-# print(set_A)
 List_N2_feeder_name=list(set(List_N2_feeder_name))
 set_A=set([x for x in List_N2_feeder_name if List_N2_feeder_name.count(x)>1])
-# print(set_A)
-
 List_N2_CB=[item + 'VB01' for item in List_N2_feeder_name]
 
 json3 = json.loads(open('n3.json').read())
 List_N3_feeder_name= [rex.findall(dict['attributes']['FACILITYID'][0:5]) for dict in json3['features']]
 List_N3_feeder_name=[a[0] for a in List_N3_feeder_name if a]
 set_A=set([x for x in List_N3_feeder_name if List_N3_feeder_name.count(x)>1])
-# print(set_A)
 List_N3_feeder_name=list(set(List_N3_feeder_name))
 set_A=set([x for x in List_N3_feeder_name if List_N3_feeder_name.count(x)>1])
-# print(set_A)
 List_N3_CB=[item + 'VB01' for item in List_N3_feeder_name]
 
 
@@ -399,10 +419,10 @@ for area in [1,2,3]:
     list_FRTU_name=[]
     list_type=[]
 
-    print('-------------retrieve GIS data of area {}-------------'.format(area))
+    # print('-------------retrieve GIS data of area {}-------------'.format(area))
     # for equipment_code in list_of_equipment_code:
     #     # print('GIS equiment code', equipment_code)
-    #     for feeder_name in tqdm(all_list_feeder_name, desc='equipment code {}'.format(equipment_code)):
+    #     for feeder_name in tqdm(all_list_feeder_name, desc='Retieve GIS data: equipment code {}'.format(equipment_code)):
     #         temp_list_feeder_name=[]
     #         temp_list_FRTU_name=[]
     #         temp_list_type=[]
@@ -443,7 +463,7 @@ for area in [1,2,3]:
         dict_feeder = json.load(read_file)
 
     #retieve APSA data
-    print('-------------retrieve APSA data of area {}-------------'.format(area))
+    # print('-------------retrieve APSA data of area {}-------------'.format(area))
     res2=requests.get("https://region1.pea.co.th/api/apsa/status/2019")
     res2=res2.json()
     list_feedername=[dict['feedername'] for dict in res2['records']]
@@ -463,7 +483,7 @@ for area in [1,2,3]:
         list_feeder=List_N3_CB
 
     df2_APSA=pd.DataFrame()
-    for feeder in tqdm(list_feeder):
+    for feeder in tqdm(list_feeder, desc='Retrieve APSA data'):
         if feeder in set(df_APSA['feedername']):
             df2_APSA=df2_APSA.append(df_APSA.loc[df_APSA['feedername'].values==feeder])
         else:
@@ -493,7 +513,7 @@ for area in [1,2,3]:
     del df_equipment['Unnamed: 0']
 
 
-    print('-------------retrieve OMS data of area {}-------------'.format(area))
+    # print('-------------retrieve OMS data of area {}-------------'.format(area))
 #     if area == 1:
 #         list_feeder_name=List_N1_feeder_name
 #     elif area ==2:
@@ -510,9 +530,7 @@ for area in [1,2,3]:
         list_feeder_name=List_N3_feeder_name
     num_feeder=1
     dict_counter={}
-    for feeder in tqdm(list_feeder_name):
-#         print(feeder)
-        num_feeder=num_feeder+1
+    for feeder in tqdm(list_feeder_name, desc='Retrieve OMS data'):
         res2=requests.get("http://172.30.200.113/webcenter/views/omsp50.php?feeder={}&year={}".format(feeder, year))
         res2=res2.json()
         if res2 !=['{Not found DATA..}']:
@@ -532,9 +550,7 @@ for area in [1,2,3]:
             else:
                 num_TR=0
         else:
-    #             print('-- no OMS data --')
             num_TL, num_TR=0,0
-    #         print(feeder , 'T/L:', num_TL, 'T/R:',num_TR)
         dict_counter.update({feeder:{'T/L':num_TL, 'T/R':num_TR}})
         pass
     print('-------------retrieve max, average load data of area {}-------------'.format(area))
@@ -546,7 +562,7 @@ for area in [1,2,3]:
         list_feeder_name=List_N3_feeder_name
 
     df_input_layer=pd.DataFrame()
-    for feeder in tqdm(list_feeder_name):
+    for feeder in tqdm(list_feeder_name, desc='Retrieve SCADA data'):
         temp_df_input_layer=pd.DataFrame()
         input_layer1_2=df2_APSA.loc[df2_APSA['feedername'].values==feeder+'VB01']
         temp_df_input_layer['feeder']=[feeder]

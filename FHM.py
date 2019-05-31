@@ -7,6 +7,7 @@ import random
 import neurolab as nl
 from tqdm import tqdm
 from time import sleep
+from datetime import datetime
 
 def decode(input):
     if input == 1:
@@ -255,11 +256,40 @@ class NumpyEncoder(json.JSONEncoder):
             return obj.tolist()
         return json.JSONEncoder.default(self, obj)
 
+print('')
+print('')
+print('#'*80)
+print('#'*80)
+sleep(0.5)
+print('#'*10,' '*58,'#'*10)
+sleep(0.5)
+print('#'*10,' '*58,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*6, ' '*2, '#'*2, ' '*2, '#'*2, ' '*2, '#'*1,' '*3, '#'*1,' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,' '*1, '#'*2, ' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*6, ' '*2, '#'*8, ' '*2,               '#'*3, '#'*3, ' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1,  '#'*2,' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*5,'#'*2, ' '*6, '#'*2, ' '*2, '#'*2, ' '*2, '#'*2,'#'*1, '#'*2,' '*22,'#'*10)
+sleep(0.5)
+print('#'*10,' '*58,'#'*10)
+sleep(0.5)
+print('#'*10,' '*44,'version 1.0.0','#'*10)
+sleep(0.5)
+print('#'*80)
+print('#'*80)
+sleep(0.5)
+print('')
+print('')
 
-year = 2019
-month = 4
 region = 1 #N
-
+region = 1 #N
+day = datetime.now().day
+month = datetime.now().month
+year = datetime.now().year
 
 number_Criteria=10
 dict_RI={1:0, 2:0, 3:0.58, 4:0.9, 5:1.12, 6:1.24, 7:1.32, 8:1.41, 9:1.46, 10:1.5}
@@ -399,10 +429,10 @@ for area in [1,2,3]:
     list_FRTU_name=[]
     list_type=[]
 
-    print('-------------retrieve GIS data of area {}-------------'.format(area))
+    # print('-------------retrieve GIS data of area {}-------------'.format(area))
     for equipment_code in list_of_equipment_code:
         # print('GIS equiment code', equipment_code)
-        for feeder_name in tqdm(all_list_feeder_name, desc='equipment code {}'.format(equipment_code)):
+        for feeder_name in tqdm(all_list_feeder_name,  desc='Retieve GIS data: equipment code {}'.format(equipment_code)):
             temp_list_feeder_name=[]
             temp_list_FRTU_name=[]
             temp_list_type=[]
@@ -463,7 +493,7 @@ for area in [1,2,3]:
         list_feeder=List_N3_CB
 
     df2_APSA=pd.DataFrame()
-    for feeder in tqdm(list_feeder):
+    for feeder in tqdm(list_feeder, desc='Retieve APSA data'):
         if feeder in set(df_APSA['feedername']):
             df2_APSA=df2_APSA.append(df_APSA.loc[df_APSA['feedername'].values==feeder])
         else:
@@ -494,14 +524,6 @@ for area in [1,2,3]:
 
 
     print('-------------retrieve OMS data of area {}-------------'.format(area))
-#     if area == 1:
-#         list_feeder_name=List_N1_feeder_name
-#     elif area ==2:
-#          list_feeder_name=List_N2_feeder_name
-#     elif area ==3:
-#         list_feeder_name=List_N3_feeder_name
-#     dict_feeder = {item1:{item2:[df_equipment.iloc[item3, 1] for item3 in set(np.where(df_equipment['type']==item2)[0]).intersection(np.where(df_equipment['feeder']==item1)[0])] for item2 in df_equipment['type'].unique()} for item1 in list_feeder_name}
-
     if area == 1:
         list_feeder_name=List_N1_feeder_name
     elif area ==2:
@@ -510,8 +532,7 @@ for area in [1,2,3]:
         list_feeder_name=List_N3_feeder_name
     num_feeder=1
     dict_counter={}
-    for feeder in tqdm(list_feeder_name):
-#         print(feeder)
+    for feeder in tqdm(list_feeder_name,  desc='Retieve OMS data'):
         num_feeder=num_feeder+1
         res2=requests.get("http://172.30.200.113/webcenter/views/omsp50.php?feeder={}&year={}".format(feeder, year))
         res2=res2.json()
@@ -546,7 +567,7 @@ for area in [1,2,3]:
         list_feeder_name=List_N3_feeder_name
 
     df_input_layer=pd.DataFrame()
-    for feeder in tqdm(list_feeder_name):
+    for feeder in tqdm(list_feeder_name,  desc='Retieve SCADA data'):
         temp_df_input_layer=pd.DataFrame()
         input_layer1_2=df2_APSA.loc[df2_APSA['feedername'].values==feeder+'VB01']
         temp_df_input_layer['feeder']=[feeder]
